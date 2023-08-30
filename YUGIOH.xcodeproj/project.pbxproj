@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711FED792A9FFA7D00347C6B /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED742A9FFA7D00347C6B /* CardData.swift */; };
+		711FED7A2A9FFA7D00347C6B /* CardPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED752A9FFA7D00347C6B /* CardPrice.swift */; };
+		711FED7B2A9FFA7D00347C6B /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED762A9FFA7D00347C6B /* CardSet.swift */; };
+		711FED7C2A9FFA7D00347C6B /* CardResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED772A9FFA7D00347C6B /* CardResponse.swift */; };
+		711FED7D2A9FFA7D00347C6B /* CardImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED782A9FFA7D00347C6B /* CardImage.swift */; };
+		711FED802A9FFAC400347C6B /* ApiRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED7F2A9FFAC400347C6B /* ApiRequests.swift */; };
+		711FED832A9FFB8500347C6B /* UIImageViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711FED822A9FFB8500347C6B /* UIImageViewExt.swift */; };
 		CEB25D552A9D7E0900A63FA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D542A9D7E0900A63FA8 /* AppDelegate.swift */; };
 		CEB25D572A9D7E0900A63FA8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D562A9D7E0900A63FA8 /* SceneDelegate.swift */; };
-		CEB25D592A9D7E0900A63FA8 /* MovieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D582A9D7E0900A63FA8 /* MovieViewController.swift */; };
+		CEB25D592A9D7E0900A63FA8 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D582A9D7E0900A63FA8 /* CardsViewController.swift */; };
 		CEB25D5E2A9D7E0A00A63FA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB25D5D2A9D7E0A00A63FA8 /* Assets.xcassets */; };
 		CEB25D612A9D7E0A00A63FA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB25D5F2A9D7E0A00A63FA8 /* LaunchScreen.storyboard */; };
 		CEB25D6A2A9D7E6A00A63FA8 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D692A9D7E6A00A63FA8 /* CardCell.swift */; };
-		CEB25D6D2A9D7ED700A63FA8 /* Carta.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D6C2A9D7ED700A63FA8 /* Carta.swift */; };
 		CEB25D702A9D7F1900A63FA8 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */; };
 		CEB25D722A9D7F3800A63FA8 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEB25D712A9D7F3800A63FA8 /* Detail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		711FED742A9FFA7D00347C6B /* CardData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardData.swift; path = ../../../../CardData.swift; sourceTree = "<group>"; };
+		711FED752A9FFA7D00347C6B /* CardPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardPrice.swift; path = ../../../../CardPrice.swift; sourceTree = "<group>"; };
+		711FED762A9FFA7D00347C6B /* CardSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardSet.swift; path = ../../../../CardSet.swift; sourceTree = "<group>"; };
+		711FED772A9FFA7D00347C6B /* CardResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardResponse.swift; path = ../../../../CardResponse.swift; sourceTree = "<group>"; };
+		711FED782A9FFA7D00347C6B /* CardImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CardImage.swift; path = ../../../../CardImage.swift; sourceTree = "<group>"; };
+		711FED7F2A9FFAC400347C6B /* ApiRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApiRequests.swift; path = ../../../../ApiRequests.swift; sourceTree = "<group>"; };
+		711FED822A9FFB8500347C6B /* UIImageViewExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIImageViewExt.swift; path = ../../../../UIImageViewExt.swift; sourceTree = "<group>"; };
 		CEB25D512A9D7E0900A63FA8 /* YUGIOH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YUGIOH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB25D542A9D7E0900A63FA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEB25D562A9D7E0900A63FA8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CEB25D582A9D7E0900A63FA8 /* MovieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewController.swift; sourceTree = "<group>"; };
+		CEB25D582A9D7E0900A63FA8 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		CEB25D5D2A9D7E0A00A63FA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEB25D602A9D7E0A00A63FA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEB25D622A9D7E0A00A63FA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEB25D692A9D7E6A00A63FA8 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
-		CEB25D6C2A9D7ED700A63FA8 /* Carta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carta.swift; sourceTree = "<group>"; };
 		CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CEB25D712A9D7F3800A63FA8 /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -43,6 +55,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		711FED7E2A9FFABD00347C6B /* Infra */ = {
+			isa = PBXGroup;
+			children = (
+				711FED7F2A9FFAC400347C6B /* ApiRequests.swift */,
+			);
+			path = Infra;
+			sourceTree = "<group>";
+		};
+		711FED812A9FFB7A00347C6B /* Ext */ = {
+			isa = PBXGroup;
+			children = (
+				711FED822A9FFB8500347C6B /* UIImageViewExt.swift */,
+			);
+			path = Ext;
+			sourceTree = "<group>";
+		};
 		CEB25D482A9D7E0900A63FA8 = {
 			isa = PBXGroup;
 			children = (
@@ -62,6 +90,8 @@
 		CEB25D532A9D7E0900A63FA8 /* YUGIOH */ = {
 			isa = PBXGroup;
 			children = (
+				711FED812A9FFB7A00347C6B /* Ext */,
+				711FED7E2A9FFABD00347C6B /* Infra */,
 				CEB25D6E2A9D7EF300A63FA8 /* Detail */,
 				CEB25D6B2A9D7EBD00A63FA8 /* Models */,
 				CEB25D682A9D7E4100A63FA8 /* Home */,
@@ -77,7 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB25D692A9D7E6A00A63FA8 /* CardCell.swift */,
-				CEB25D582A9D7E0900A63FA8 /* MovieViewController.swift */,
+				CEB25D582A9D7E0900A63FA8 /* CardsViewController.swift */,
 				CEB25D542A9D7E0900A63FA8 /* AppDelegate.swift */,
 			);
 			path = Home;
@@ -86,7 +116,11 @@
 		CEB25D6B2A9D7EBD00A63FA8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEB25D6C2A9D7ED700A63FA8 /* Carta.swift */,
+				711FED752A9FFA7D00347C6B /* CardPrice.swift */,
+				711FED782A9FFA7D00347C6B /* CardImage.swift */,
+				711FED762A9FFA7D00347C6B /* CardSet.swift */,
+				711FED742A9FFA7D00347C6B /* CardData.swift */,
+				711FED772A9FFA7D00347C6B /* CardResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -171,11 +205,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEB25D6D2A9D7ED700A63FA8 /* Carta.swift in Sources */,
-				CEB25D592A9D7E0900A63FA8 /* MovieViewController.swift in Sources */,
+				711FED802A9FFAC400347C6B /* ApiRequests.swift in Sources */,
+				CEB25D592A9D7E0900A63FA8 /* CardsViewController.swift in Sources */,
+				711FED7D2A9FFA7D00347C6B /* CardImage.swift in Sources */,
 				CEB25D552A9D7E0900A63FA8 /* AppDelegate.swift in Sources */,
+				711FED832A9FFB8500347C6B /* UIImageViewExt.swift in Sources */,
+				711FED7A2A9FFA7D00347C6B /* CardPrice.swift in Sources */,
 				CEB25D702A9D7F1900A63FA8 /* DetailViewController.swift in Sources */,
+				711FED792A9FFA7D00347C6B /* CardData.swift in Sources */,
+				711FED7C2A9FFA7D00347C6B /* CardResponse.swift in Sources */,
 				CEB25D572A9D7E0900A63FA8 /* SceneDelegate.swift in Sources */,
+				711FED7B2A9FFA7D00347C6B /* CardSet.swift in Sources */,
 				CEB25D6A2A9D7E6A00A63FA8 /* CardCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

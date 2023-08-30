@@ -1,16 +1,8 @@
 import UIKit
 
-class MoviewViewController: UIViewController {
+class CardsViewController: UIViewController {
     
-    private let cartas : [Carta] = [
-        .init(title: "Mago Negro", releaseDate: "MAGE", imageURL: "", timeMusica: ""),
-        .init(title: "Exodia", releaseDate: "BOSS", imageURL: "", timeMusica: ""),
-        .init(title: "Cyber Dragon", releaseDate: "DRAGON", imageURL: "", timeMusica: ""),
-        .init(title: "Divine Serpent", releaseDate: "SERPENT", imageURL: "", timeMusica: ""),
-        .init(title: "Kuriboh", releaseDate: "PUF", imageURL: "", timeMusica: ""),
-        .init(title: "Jovem Touro", releaseDate: "WARRIOR", imageURL: "", timeMusica: ""),
-        .init(title: "Demonio Selvagem", releaseDate: "WARRIOR", imageURL: "", timeMusica: "")
-    ]
+    private var cards: [CardData] = []
     
     // 1
     //Edicao do label title
@@ -21,7 +13,7 @@ class MoviewViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 26, weight: .black)
         label.textColor = .black
         label.numberOfLines = 0
-        label.text = "BOOK OF GOOD"
+        label.text = "Lista de Cartas"
         
         return label
     }()
@@ -35,8 +27,6 @@ class MoviewViewController: UIViewController {
         return table
     }()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -46,6 +36,15 @@ class MoviewViewController: UIViewController {
         view.backgroundColor = .white
         addViewsInHierarchy()
         setupConstraints()
+        
+        Task {
+            do {
+                try await fetchYuGiOhCards()
+            } catch {
+                print("Erro: \(error)")
+            }
+        }
+        
         tableView.dataSource = self
         tableView.delegate = self
         
@@ -78,21 +77,31 @@ class MoviewViewController: UIViewController {
         ])
     }
     
+    private func fetchYuGiOhCards() async throws -> Void {
+        let request = ApiRequests()
+        self.cards = try await request.fetchYuGiOhCards()
+        
+        DispatchQueue.main.async {
+            self.tableView.reloadData()
+        }
     }
-extension MoviewViewController: UITableViewDataSource {
+    
+}
+
+extension CardsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection  section: Int) -> Int {
-        cartas.count
+        cards.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CardCell()
-        let carta = cartas[indexPath.row]
-        cell.setup(carta: carta)
+        let carta = cards[indexPath.row]
+        cell.setup(card: carta)
         return cell
     }
 }
     
 
-extension MoviewViewController: UITableViewDelegate{
+extension CardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let storyboard = UIStoryboard(name: "Detail", bundle: Bundle(for:  DetailsViewController.self))
         let detailViewController = storyboard.instantiateViewController(withIdentifier: "Detail")
