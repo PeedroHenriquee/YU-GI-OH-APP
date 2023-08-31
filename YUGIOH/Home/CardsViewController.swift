@@ -94,8 +94,8 @@ extension CardsViewController: UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CardCell()
-        let carta = cards[indexPath.row]
-        cell.setup(card: carta)
+        let card = cards[indexPath.row]
+        cell.setup(card: card)
         return cell
     }
 }
@@ -103,8 +103,10 @@ extension CardsViewController: UITableViewDataSource {
 
 extension CardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        let card = cards[indexPath.row]
         let storyboard = UIStoryboard(name: "Detail", bundle: Bundle(for:  DetailsViewController.self))
         let detailViewController = storyboard.instantiateViewController(withIdentifier: "Detail")
+        detailViewController. = card
         navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
