@@ -104,9 +104,9 @@ extension CardsViewController: UITableViewDataSource {
 extension CardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let card = cards[indexPath.row]
-        let storyboard = UIStoryboard(name: "Detail", bundle: Bundle(for:  DetailsViewController.self))
-        let detailViewController = storyboard.instantiateViewController(withIdentifier: "Detail")
-        detailViewController. = card
+        let storyboard = UIStoryboard(name: "Detail", bundle: Bundle(for:  DetailViewController.self))
+        let detailViewController = storyboard.instantiateViewController(withIdentifier: "Detail") as! DetailViewController
+        detailViewController.card = card
         navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
