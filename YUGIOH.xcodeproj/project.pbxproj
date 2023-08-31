@@ -128,8 +128,8 @@
 		CEB25D6E2A9D7EF300A63FA8 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */,
 				CEB25D712A9D7F3800A63FA8 /* Detail.storyboard */,
+				CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";

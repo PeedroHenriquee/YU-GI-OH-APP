@@ -6,12 +6,11 @@ class CardCell: UITableViewCell{
         let stack = UIStackView()
         stack.translatesAutoresizingMaskIntoConstraints = false
         stack.axis = .horizontal
-        stack.spacing = 16
         stack.backgroundColor = .secondarySystemBackground
-        stack.layer.cornerRadius = 20
-        return  stack
+        stack.layer.cornerRadius = 15
+        stack.spacing = 16
+        return stack
     }()
-    
     
     private let cardImageView: UIImageView = {
         let imageView = UIImageView()
@@ -25,7 +24,8 @@ class CardCell: UITableViewCell{
     private let verticalStack : UIStackView = {
         let stack = UIStackView()
         stack.axis = .vertical
-        stack.spacing = 2
+        stack.spacing = 8
+        stack.distribution = .equalCentering
         return stack
     }()
     
@@ -69,14 +69,14 @@ class CardCell: UITableViewCell{
         nil
     }
     
-    private func setupView(){
+    private func setupView() {
         selectionStyle = .none
     }
     
     public func setup(card: CardData){
         titleLabel.text = card.name
-        setRarityLabel.text = card.card_sets.first?.set_rarity
-        typeLabel.text = " \(card.type)"
+        setRarityLabel.text = "Raridade: \(card.card_sets[0].set_rarity)"
+        typeLabel.text = "Tipo: \(card.type)"
         cardImageView.imageFromUrl(url: card.card_images[0].returnNormalImageUrl())
    }
     
@@ -84,9 +84,11 @@ class CardCell: UITableViewCell{
         contentView.addSubview(horizontalStack)
         horizontalStack.addArrangedSubview(cardImageView)
         horizontalStack.addArrangedSubview(verticalStack)
+        verticalStack.addArrangedSubview(UIView())
         verticalStack.addArrangedSubview(titleLabel)
         verticalStack.addArrangedSubview(setRarityLabel)
         verticalStack.addArrangedSubview(typeLabel)
+        verticalStack.addArrangedSubview(UIView())
     }
     
     private func setupConstraints(){

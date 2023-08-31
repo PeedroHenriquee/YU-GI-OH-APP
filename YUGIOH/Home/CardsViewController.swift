@@ -3,7 +3,7 @@ import UIKit
 class CardsViewController: UIViewController {
     
     private var cards: [CardData] = []
-    
+
     // 1
     //Edicao do label title
     private let titleLabel: UILabel = {
@@ -85,13 +85,13 @@ class CardsViewController: UIViewController {
             self.tableView.reloadData()
         }
     }
-    
 }
 
 extension CardsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection  section: Int) -> Int {
         cards.count
     }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = CardCell()
         let card = cards[indexPath.row]
@@ -99,7 +99,6 @@ extension CardsViewController: UITableViewDataSource {
         return cell
     }
 }
-    
 
 extension CardsViewController: UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
