@@ -106,7 +106,6 @@
 				71CFE5432AA038FA00995345 /* Infra */,
 				71CFE5352AA036A300995345 /* Models */,
 				CEB25D6E2A9D7EF300A63FA8 /* Detail */,
-				CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */,
 				CEB25D682A9D7E4100A63FA8 /* Home */,
 				CEB25D562A9D7E0900A63FA8 /* SceneDelegate.swift */,
 				CEB25D5D2A9D7E0A00A63FA8 /* Assets.xcassets */,
@@ -130,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CEB25D712A9D7F3800A63FA8 /* Detail.storyboard */,
+				CEB25D6F2A9D7F1900A63FA8 /* DetailViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
